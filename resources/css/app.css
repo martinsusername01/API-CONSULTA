@@ -1,0 +1,40 @@
+.add-margin {
+    margin-bottom: 20px;
+}
+
+.modalidade-nome {
+    text-transform: capitalize;
+}
+
+.logo-header {
+    max-width: 37%;
+}
+
+.offers-size {
+    min-width: 500px;
+}
+
+.f-size {
+    font-size: 25px;
+    color: white;
+    transition: 0.5s;
+}
+
+.f-size:hover {
+    color: cornflowerblue;
+}
+
+.error{
+    font-size: 13px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: red;
+}
+
+.label-error{
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+

@@ -1,0 +1,50 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API GOSAT",
+        "version": "v1"
+    },
+    "host": "localhost",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/cpf": {
+            "get": {
+                "operationId": "cpfDetails",
+                "summary": "Consulta de CPF",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "description": "Recebe o CPF do cliente para realizar as consultas.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        "/oferta/{cpf}/{id_instituicao}": {
+            "get": {
+                "operationId": "offers",
+                "summary": "Consulta de Instituições por ID",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "description": "Recebe o CPF do cliente para realizar as consultas.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id_instituicao",
+                        "description": "Recebe o ID da Instituição pesquisada para trazer os resultados de forma ordenada e realizar as comparações.",
+                        "required": true,
+                        "type": "int"
+                    }
+                ]
+            }
+        }
+    }
+}
